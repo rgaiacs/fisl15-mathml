@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=792, user-scalable=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="stylesheet" href="shower/themes/bright/styles/screen.css">
+    <link rel="stylesheet" href="css/math-style-demo.css">
     <style>
         #foot {
             bottom: 5px;
@@ -18,16 +19,274 @@
     <header class="caption">
         <h1>Math and Digital Education</h1>
         <p>By Raniere Silva: &lt;<a href="mailto:raniere@ime.unicamp.br">raniere@ime.unicamp.br</a>&gt;</p>
-        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img
-          alt="Creative Commons License" style="border-width:0"
-          src="http://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This
-        work is licensed under a <a rel="license"
-          href="http://creativecommons.org/licenses/by/4.0/">Creative Commons
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+            <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/88x31.png" />
+        </a>
+        <br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons
           Attribution 4.0 International License</a>.
     </header>
     <section class="slide">
         <div>
+            <p>From "How Learning Works: 7 Research-Based Principles for Smart Teaching" by Susan A. Ambrose et al:
+                <blockquote>
+                    #3: Students’ motivation generates, directs, and sustains what they do to learn.
+                </blockquote>
+            </p>
+            <footer>
+                <p>Personal experience: learn using LaTeX in first undergraduate year and older students even know the basic (some of them google for a image of the equation needed).</p>
+            </footer>
+        </div>
+    </section>
+    <section class="slide">
+        <div style="text-align:center;">
+            <img src="img/ex21.png" width="180" alt="ex21" />
+        </div>
+    </section>
+    <section class="slide">
+        <div style="text-align:center;">
+            <p>This is a fork of <a href="https://github.com/fred-wang/MozSummitMathML.git">Mozilla
+            MathML Project</a> by Frédéric Wang.</p>
+            <img src="img/mathzilla.svg" width=25% alt="mathzilla" />
+        </div>
+    </section>
+    <section class="slide shout">
+        <div>
             <h2>Math and Digital Education</h2>
+        </div>
+    </section>
+    <section class="slide">
+        <div>
+            <h2>History of the Project</h2>
+            <ul>
+                <li>1989-1990: Invention of the Web by researchers at CERN.</li>
+                <li>March 1995: HTML 3.0 Draft Released; contains a &lt;MATH&gt; tag.</li>
+                <li>January 1998: Announcement to open Netscape Source Code.</li>
+                <li>April 1998: MathML 1.0 Released.</li>
+                <li>May 1999: Launch of the Project by Volunteer Contributors.</li>
+                <li>June 2002: Mozilla 1.0 Released with MathML support.</li>
+                <li>November 2004: Firefox 1.0 Released.</li>
+                <li>October 2010: MathML 3.0 Released.</li>
+            </ul>
+            <footer>
+                <p>Others important events:</p>
+                <ul>
+                    <li>February 2001: MathML 2.0 Released.</li>
+                    <li>July 2003: Creation of the Mozilla Foundation.</li>
+                    <li>??? 2013: Launch of Firefox OS</li>
+                    <li>June 2013: Launch of Mozilla Science Lab.</li>
+                </ul>
+            </footer>
+        </div>
+    </section>
+    <section class="slide shout">
+        <div>
+            <h2>MathML is part of HTML5</h2>
+            <footer>
+                <p>MathML is the markup language used in HTML5 to write math...</p>
+            </footer>
+        </div>
+    </section>
+    <section class="slide">
+        <div>
+            <h2>MathML integrates well in HTML</h2>
+            <table style="width: 100%; font-size: 64px">
+                <tr>
+                    <td>PNG</td>
+                    <td>blah
+                        <img src="img/ex21.png" width="180" alt="ex21" />blah</td>
+                </tr>
+                <tr>
+                    <td>MathML</td>
+                    <td>blah
+                        <math>
+                            <mrow>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>x</mi>
+                                        <mo>+</mo>
+                                        <msup>
+                                            <mi>y</mi>
+                                            <mn>2</mn>
+                                        </msup>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>k</mi>
+
+                                        <mo>+</mo>
+
+                                        <mn>1</mn>
+                                    </mrow>
+                                </mfrac>
+                            </mrow>
+                        </math>blah</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section class="slide">
+        <div>
+            <h2>This is an SVG image</h2>
+            <div style="text-align:center;">
+                <img src="img/mathzilla.svg" height="64" alt="mathzilla" />
+                <img src="img/mathzilla.svg" height="128" alt="mathzilla" />
+                <img src="img/mathzilla.svg" height="256" alt="mathzilla" />
+            </div>
+        </div>
+    </section>
+    <section class="slide">
+        <div>
+            <h2>MathML can be styled</h2>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" class="mathmlstyle" style="font-size: 64px">
+                <mstyle displaystyle="true">
+                    <mi mathvariant="normal">&#x0393;
+                        <!-- Γ -->
+                    </mi>
+                    <mo stretchy="false">(</mo>
+                    <mi>z</mi>
+                    <mo stretchy="false">)</mo>
+                    <mo>=</mo>
+                    <msubsup>
+                        <mo>&#x222B;
+                            <!-- ∫ -->
+                        </mo>
+                        <mn>0</mn>
+                        <mi mathvariant="normal">&#x221E;
+                            <!-- ∞ -->
+                        </mi>
+                    </msubsup>
+                    <msup>
+                        <mi>t</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                            <mi>z</mi>
+                        </mrow>
+                    </msup>
+                    <msup>
+                        <mi>e</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                            <mo>&#x2212;
+                                <!-- − -->
+                            </mo>
+                            <mi>t</mi>
+                        </mrow>
+                    </msup>
+                    <mspace width="thinmathspace" />
+                    <mfrac>
+                        <mrow>
+                            <mrow class="MJX-TeXAtom-ORD">
+                                <mi mathvariant="normal">d</mi>
+                            </mrow>
+                            <mi mathvariant="normal">t</mi>
+                        </mrow>
+                        <mi>t</mi>
+                    </mfrac>
+                </mstyle>
+            </math>
+        </div>
+    </section>
+    <section class="slide">
+        <div>
+            <h2>Can be modified via JavaScript</h2>
+            <math display="block" style="font-size: 64px; color: #ffa;">
+                <mfrac id="mathmljs" bevelled="true">
+                    <msqrt>
+                        <mn>2</mn>
+                    </msqrt>
+                    <mi>&pi;</mi>
+                </mfrac>
+            </math>
+            <script src="js/math-modify-demo.js"></script>
+        </div>
+    </section>
+    <section class="slide shout">
+        <div>
+            <h2>Where find MathML?</h2>
+        </div>
+    </section>
+    <section class="slide">
+        <div>
+            <h2>MDN Wiki</h2>
+            <div style="text-align:center;">
+                <img src="img/mathml-mdn.png" width=80% alt="MDN" />
+            </div>
+        </div>
+    </section>
+    <section class="slide">
+        <div>
+            <h2>Wikipedia</h2>
+            <div style="text-align:center;">
+                <img src="img/mathml-wikipedia.png" width=80% alt="Wikipedia" />
+            </div>
+        </div>
+    </section>
+    <section class="slide">
+        <div>
+            <h2>(Jacques Distler's) Blog</h2>
+            <div style="text-align:center;">
+                <img src="img/mathml-blog.png" width=80% alt="Blog" />
+            </div>
+        </div>
+    </section>
+    <section class="slide">
+        <div>
+            <h2>Connexions E-Course</h2>
+            <div style="text-align:center;">
+                <img src="img/mathml-connexions.png" width=70% alt="Connexions" />
+            </div>
+        </div>
+    </section>
+    <section class="slide">
+        <div>
+            <h2>EPUBReader add-on</h2>
+            <div style="text-align:center;">
+                <img src="img/mathml-ebooks.png" width=80% alt="EPUBReader" />
+            </div>
+        </div>
+    </section>
+    <section class="slide">
+        <div>
+            <h2>Firemath add-on</h2>
+            <div style="text-align:center;">
+                <img src="img/firemath.jpg" width=70% alt="Firemath" />
+            </div>
+        </div>
+    </section>
+    <section class="slide">
+        <div>
+            <h2>Thunderbird</h2>
+            <div style="text-align:center;">
+                <img src="img/mathml-thunderbird.png" width=50% alt="InstantBird" />
+            </div>
+        </div>
+    </section>
+    <section class="slide">
+        <div>
+            <h2>InstantBird</h2>
+            <div style="text-align:center;">
+                <img src="img/mathml-instantbird.png" width=40% alt="InstantBird" />
+            </div>
+        </div>
+    </section>
+    <section class="slide">
+        <div>
+            <h2>BlueGriffon</h2>
+            <div style="text-align:center;">
+                <img src="img/mathml-bluegriffon.png" width=60% alt="BlueGriffon" />
+            </div>
+        </div>
+    </section>
+    <section class="slide shout">
+        <div>
+            <h2>How write MathML?</h2>
+        </div>
+    </section>
+    <section class="slide shout">
+        <div>
+            <h2>Work in Development and Future Projects</h2>
+        </div>
+    </section>
+    <section class="slide shout">
+        <div>
+            <h2>Thanks</h2>
         </div>
     </section>
     <script src="shower/shower.min.js"></script>

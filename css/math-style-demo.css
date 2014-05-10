@@ -1,0 +1,4 @@
+mi, mtext, mn { font-family: 'Neo Euler', 'Amiri'; }
+math.mathmlstyle mo { color: #faa;  }
+math.mathmlstyle mfrac { text-shadow: #aaf 10px 12px 1px; }
+math.arabic { font-size: 30px; }
